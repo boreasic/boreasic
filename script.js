@@ -1,4 +1,4 @@
-const GAS_ENDPOINT = "";
+const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbw0BHPiIGXn_k-TPh59_eiC77uIOb0X51103Mg7Whq3YXxkQ0kEvpZ1TrUQ5nBaAEWB/exec";
 
 const toast = document.querySelector(".toast");
 let toastTimer;
