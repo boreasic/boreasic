@@ -17,6 +17,13 @@ if (intro) {
   }
 }
 
+const header = document.querySelector(".site-header");
+if (header) {
+  const updateHeader = () => header.classList.toggle("compact", window.scrollY > 60);
+  window.addEventListener("scroll", updateHeader, { passive: true });
+  updateHeader();
+}
+
 function showToast(message) {
   toast.textContent = message;
   toast.classList.add("visible");
