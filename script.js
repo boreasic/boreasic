@@ -3,6 +3,20 @@ const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbw0BHPiIGXn_k-TPh5
 const toast = document.querySelector(".toast");
 let toastTimer;
 
+const intro = document.querySelector(".intro");
+if (intro) {
+  const finishIntro = () => {
+    document.body.classList.remove("intro-active");
+    document.body.classList.add("intro-complete");
+  };
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    finishIntro();
+  } else {
+    window.setTimeout(finishIntro, 2600);
+  }
+}
+
 function showToast(message) {
   toast.textContent = message;
   toast.classList.add("visible");

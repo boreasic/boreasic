@@ -10,10 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="intro-active">
+    <div class="intro" aria-hidden="true">
+      <div class="intro-rotation">
+        <i class="intro-leaf"></i><i class="intro-leaf"></i><i class="intro-leaf"></i>
+        <i class="intro-leaf"></i><i class="intro-leaf"></i><i class="intro-leaf"></i>
+      </div>
+    </div>
     <header class="site-header">
       <a class="brand" href="#" aria-label="boreasic home">
-        <img class="brand-logo" src="assets/boreasic-logo.png" alt="boreasic" />
+        <img class="brand-logo header-logo" src="assets/boreasic-mark.png" alt="boreasic" />
       </a>
       <nav aria-label="Main navigation">
         <a href="#services">Services</a>
@@ -36,26 +42,6 @@
           </div>
         </div>
 
-        <div class="hero-orbit reveal" aria-hidden="true">
-          <div class="orbit orbit-outer"></div>
-          <div class="orbit orbit-middle"></div>
-          <div class="orbit orbit-inner"></div>
-          <div class="logo-leaves">
-            <img src="assets/boreasic-leaf-1.png" alt="" />
-            <img src="assets/boreasic-leaf-2.png" alt="" />
-            <img src="assets/boreasic-leaf-3.png" alt="" />
-            <img src="assets/boreasic-leaf-4.png" alt="" />
-            <img src="assets/boreasic-leaf-5.png" alt="" />
-            <img src="assets/boreasic-leaf-6.png" alt="" />
-          </div>
-          <div class="orbit-center">b</div>
-          <span class="orbit-label label-one">SYSTEMS</span>
-          <span class="orbit-label label-two">IN MOTION</span>
-          <span class="orbit-dot dot-one"></span>
-          <span class="orbit-dot dot-two"></span>
-          <span class="orbit-spark spark-one">✦</span>
-          <span class="orbit-spark spark-two">✦</span>
-        </div>
         <p class="scroll-note">Scroll to explore <span></span></p>
       </section>
 
@@ -153,6 +139,7 @@
     </footer>
 
     <div class="toast" role="status" aria-live="polite"></div>
+    <noscript><style>.intro { display: none; }</style></noscript>
     <script src="script.js"></script>
   </body>
 </html>
