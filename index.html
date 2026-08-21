@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="boreasic creates considered digital systems for ambitious teams."
+    />
+    <title>boreasic — Digital systems, made clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="boreasic home">
+        <img class="brand-logo brand-logo-header" src="assets/boreasic-logo.png" alt="boreasic" />
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#approach">Approach</a>
+        <a href="#capabilities">Capabilities</a>
+      </nav>
+      <button class="button button-small" data-gas-event="start_conversation">Let's talk <span>↗</span></button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Independent digital studio <span>●</span> 2026</p>
+          <h1 class="reveal">Make what<br /><em>moves</em> you.</h1>
+          <p class="hero-intro reveal">
+            boreasic turns complicated ideas into clear, useful digital experiences.
+            Strategy, design, and technology moving in one direction.
+          </p>
+          <div class="hero-actions reveal">
+            <button class="button" data-gas-event="start_project">Start a project <span>↗</span></button>
+            <a class="text-link" href="#capabilities">Explore what we do <span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-orbit reveal" aria-hidden="true">
+          <div class="orbit orbit-outer"></div>
+          <div class="orbit orbit-middle"></div>
+          <div class="orbit orbit-inner"></div>
+          <div class="orbit-label label-one">CLARITY</div>
+          <div class="orbit-label label-two">MOMENTUM</div>
+          <div class="orbit-core"><span>b</span></div>
+          <div class="star star-one">✦</div>
+          <div class="star star-two">✦</div>
+        </div>
+        <p class="scroll-note">SCROLL TO EXPLORE <span></span></p>
+      </section>
+
+      <section class="statement" id="approach">
+        <p class="section-label">01 / OUR POINT OF VIEW</p>
+        <h2 class="split-text">The best work has a pulse. It feels inevitable, and never expected.</h2>
+        <div class="statement-bottom">
+          <p>We bring together the right disciplines at the right moment, turning complexity into progress that people can feel.</p>
+          <a class="round-link" href="#capabilities" aria-label="Explore our capabilities">↘</a>
+        </div>
+      </section>
+
+      <section class="capabilities" id="capabilities">
+        <div class="capabilities-heading">
+          <p class="section-label">02 / CAPABILITIES</p>
+          <p>From first signal to lasting system.</p>
+        </div>
+        <div class="service-list">
+          <article class="service reveal">
+            <span class="service-number">01</span>
+            <h3>Direction</h3>
+            <p>Positioning, product strategy, and a focused route from now to next.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service reveal">
+            <span class="service-number">02</span>
+            <h3>Identity</h3>
+            <p>Brands with a point of view, built to be recognized and remembered.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service reveal">
+            <span class="service-number">03</span>
+            <h3>Experience</h3>
+            <p>Digital products and websites that make every interaction count.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact">
+        <p class="section-label">03 / BEGIN SOMEWHERE</p>
+        <h2>Have a good<br /><em>question?</em></h2>
+        <form class="contact-form" id="contact-form">
+          <label for="email">Your email address</label>
+          <div class="email-field">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+            <button class="button button-light" type="submit">Keep me posted <span>↗</span></button>
+          </div>
+        </form>
+        <div class="contact-orb" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#" aria-label="boreasic home">
+        <img class="brand-logo brand-logo-footer" src="assets/boreasic-logo.png" alt="boreasic" />
+      </a>
+      <p>© <span id="year"></span> boreasic</p>
+      <a href="mailto:hello@boreasic.com">hello@boreasic.com ↗</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
