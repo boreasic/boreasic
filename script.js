@@ -13,7 +13,7 @@ if (intro) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     finishIntro();
   } else {
-    window.setTimeout(finishIntro, 2600);
+    window.setTimeout(finishIntro, 1400);
   }
 }
 
